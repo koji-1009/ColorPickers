@@ -18,8 +18,8 @@ class PickerData : BaseObservable() {
     val typeA = "Alpha"
 
     @get:Bindable
-    val img = RGBAData()
+    val img = RGBAData(aDefault = 255, rDefault = 180, gDefault = 180, bDefault = 180)
 
     @get:Bindable
-    val back = RGBAData()
+    val back = RGBAData(aDefault = 50, rDefault = 60, gDefault = 60, bDefault = 60)
 }
