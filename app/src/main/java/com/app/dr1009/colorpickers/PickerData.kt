@@ -34,4 +34,14 @@ class PickerData : BaseObservable() {
             field = value
             notifyPropertyChanged(BR.b)
         }
+
+    @get:Bindable
+    val typeA = "Alpha"
+
+    @get:Bindable
+    var a = 0
+        set(value) {
+            field = value
+            notifyPropertyChanged(BR.a)
+        }
 }

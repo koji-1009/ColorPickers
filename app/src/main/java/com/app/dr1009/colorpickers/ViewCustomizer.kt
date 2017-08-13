@@ -10,10 +10,10 @@ object ViewCustomizer {
     private val TAG = ViewCustomizer::class.java.simpleName
 
     @JvmStatic
-    @BindingAdapter("r", "g", "b")
-    fun setViewBackgroundRGBA(view: View, r: Int, g: Int, b: Int) {
-        Log.d(TAG, "r $r g $g b $b")
-        view.setBackgroundColor(Color.rgb(r, g, b))
+    @BindingAdapter("backR", "backG", "backB", "backA")
+    fun setViewBackgroundRGBA(view: View, r: Int, g: Int, b: Int, a: Int) {
+        Log.d(TAG, "r $r g $g b $b a $a")
+        view.setBackgroundColor(Color.argb(a, r, g, b))
         view.invalidate()
     }
 }
