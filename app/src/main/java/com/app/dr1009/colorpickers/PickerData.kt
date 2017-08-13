@@ -9,39 +9,17 @@ class PickerData : BaseObservable() {
     val typeR = "R"
 
     @get:Bindable
-    var r = 0
-        set(value) {
-            field = value
-            notifyPropertyChanged(BR.r)
-        }
-
-    @get:Bindable
     val typeG = "G"
-
-    @get:Bindable
-    var g = 0
-        set(value) {
-            field = value
-            notifyPropertyChanged(BR.g)
-        }
 
     @get:Bindable
     val typeB = "B"
 
     @get:Bindable
-    var b = 0
-        set(value) {
-            field = value
-            notifyPropertyChanged(BR.b)
-        }
-
-    @get:Bindable
     val typeA = "Alpha"
 
     @get:Bindable
-    var a = 0
-        set(value) {
-            field = value
-            notifyPropertyChanged(BR.a)
-        }
+    val img = RGBAData()
+
+    @get:Bindable
+    val back = RGBAData()
 }

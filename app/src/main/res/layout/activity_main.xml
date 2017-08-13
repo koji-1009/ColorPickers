@@ -29,10 +29,11 @@
             android:src="@drawable/ic_android_black_24dp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:backA="@{data.a}"
-            app:backB="@{data.b}"
-            app:backG="@{data.g}"
-            app:backR="@{data.r}"
+            app:backA="@{data.back.a}"
+            app:backB="@{data.back.b}"
+            app:backG="@{data.back.g}"
+            app:backR="@{data.back.r}"
+            app:layout_constraintHorizontal_weight="0.5"
             app:layout_constraintTop_toTopOf="parent" />
 
         <LinearLayout
@@ -59,22 +60,22 @@
 
             <include
                 layout="@layout/rgb_seek_item"
-                app:seek="@={data.r}"
+                app:seek="@={data.back.r}"
                 app:type="@{data.typeR}" />
 
             <include
                 layout="@layout/rgb_seek_item"
-                app:seek="@={data.g}"
+                app:seek="@={data.back.g}"
                 app:type="@{data.typeG}" />
 
             <include
                 layout="@layout/rgb_seek_item"
-                app:seek="@={data.b}"
+                app:seek="@={data.back.b}"
                 app:type="@{data.typeB}" />
 
             <include
                 layout="@layout/rgb_seek_item"
-                app:seek="@={data.a}"
+                app:seek="@={data.back.a}"
                 app:type="@{data.typeA}" />
         </LinearLayout>
     </android.support.constraint.ConstraintLayout>
