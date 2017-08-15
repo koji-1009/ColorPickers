@@ -59,25 +59,25 @@
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.img.r}"
                     app:type="@{data.TYPE_R}" />
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.img.g}"
                     app:type="@{data.TYPE_G}" />
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.img.b}"
                     app:type="@{data.TYPE_B}" />
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.img.a}"
                     app:type="@{data.TYPE_A}" />
 
@@ -88,31 +88,36 @@
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.back.r}"
                     app:type="@{data.TYPE_R}" />
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.back.g}"
                     app:type="@{data.TYPE_G}" />
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.back.b}"
                     app:type="@{data.TYPE_B}" />
 
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRGBA}"
+                    app:maxSeek="@{data.MAX_RGBA}"
                     app:seek="@={data.back.a}"
                     app:type="@{data.TYPE_A}" />
 
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/image_rotation" />
+
                 <include
                     layout="@layout/seek_item"
-                    app:maxSeek="@{data.maxRotation}"
+                    app:maxSeek="@{data.MAX_ROTATION}"
                     app:seek="@={data.rotation.rotation}"
                     app:type="@{data.TYPE_ROTATION}" />
             </LinearLayout>

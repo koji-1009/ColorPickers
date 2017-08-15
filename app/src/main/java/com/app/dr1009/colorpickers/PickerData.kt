@@ -5,7 +5,6 @@ import android.databinding.Bindable
 
 class PickerData : BaseObservable() {
 
-    // region Title Of SeekBar
     @get:Bindable
     val TYPE_R = "R"
 
@@ -19,18 +18,14 @@ class PickerData : BaseObservable() {
     val TYPE_A = "Alpha"
 
     @get:Bindable
-    val typeRotation = "Rotation"
-    // endregion
-
-    // region Max Of SeekBar Progress
-    @get:Bindable
-    val maxRGBA = 255
+    val TYPE_ROTATION = "Rotation"
 
     @get:Bindable
-    val maxRotation = 360
-    // endregion
+    val MAX_RGBA = 255
 
-    // region Data
+    @get:Bindable
+    val MAX_ROTATION = 360
+
     @get:Bindable
     val img = RGBAData(aDefault = 255, rDefault = 180, gDefault = 180, bDefault = 180)
 
@@ -38,6 +33,5 @@ class PickerData : BaseObservable() {
     val back = RGBAData(aDefault = 50, rDefault = 60, gDefault = 60, bDefault = 60)
 
     @get:Bindable
-    val rotation = RotationData(rotateDefault = 0)
-    // endregion
+    val rotation = RotationData()
 }
