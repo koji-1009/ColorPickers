@@ -59,22 +59,22 @@
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.img.r}"
-                    app:type="@{data.typeR}" />
+                    app:type="@{data.TYPE_R}" />
 
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.img.g}"
-                    app:type="@{data.typeG}" />
+                    app:type="@{data.TYPE_G}" />
 
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.img.b}"
-                    app:type="@{data.typeB}" />
+                    app:type="@{data.TYPE_B}" />
 
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.img.a}"
-                    app:type="@{data.typeA}" />
+                    app:type="@{data.TYPE_A}" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -84,22 +84,22 @@
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.back.r}"
-                    app:type="@{data.typeR}" />
+                    app:type="@{data.TYPE_R}" />
 
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.back.g}"
-                    app:type="@{data.typeG}" />
+                    app:type="@{data.TYPE_G}" />
 
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.back.b}"
-                    app:type="@{data.typeB}" />
+                    app:type="@{data.TYPE_B}" />
 
                 <include
                     layout="@layout/rgb_seek_item"
                     app:seek="@={data.back.a}"
-                    app:type="@{data.typeA}" />
+                    app:type="@{data.TYPE_A}" />
             </LinearLayout>
         </ScrollView>
     </android.support.constraint.ConstraintLayout>

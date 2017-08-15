@@ -6,16 +6,16 @@ import android.databinding.Bindable
 class PickerData : BaseObservable() {
 
     @get:Bindable
-    val typeR = "R"
+    val TYPE_R = "R"
 
     @get:Bindable
-    val typeG = "G"
+    val TYPE_G = "G"
 
     @get:Bindable
-    val typeB = "B"
+    val TYPE_B = "B"
 
     @get:Bindable
-    val typeA = "Alpha"
+    val TYPE_A = "Alpha"
 
     @get:Bindable
     val img = RGBAData(aDefault = 255, rDefault = 180, gDefault = 180, bDefault = 180)
