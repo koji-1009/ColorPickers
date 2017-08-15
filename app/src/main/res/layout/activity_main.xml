@@ -61,25 +61,25 @@
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.img.r}"
-                    app:type="@{data.typeR}" />
+                    app:type="@{data.TYPE_R}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.img.g}"
-                    app:type="@{data.typeG}" />
+                    app:type="@{data.TYPE_G}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.img.b}"
-                    app:type="@{data.typeB}" />
+                    app:type="@{data.TYPE_B}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.img.a}"
-                    app:type="@{data.typeA}" />
+                    app:type="@{data.TYPE_A}" />
 
                 <TextView
                     android:layout_width="wrap_content"
@@ -90,32 +90,31 @@
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.back.r}"
-                    app:type="@{data.typeR}" />
+                    app:type="@{data.TYPE_R}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.back.g}"
-                    app:type="@{data.typeG}" />
+                    app:type="@{data.TYPE_G}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.back.b}"
-                    app:type="@{data.typeB}" />
+                    app:type="@{data.TYPE_B}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRGBA}"
                     app:seek="@={data.back.a}"
-                    app:type="@{data.typeA}" />
+                    app:type="@{data.TYPE_A}" />
 
                 <include
                     layout="@layout/seek_item"
                     app:maxSeek="@{data.maxRotation}"
                     app:seek="@={data.rotation.rotation}"
-                    app:type="@{data.typeRotation}" />
-
+                    app:type="@{data.TYPE_ROTATION}" />
             </LinearLayout>
         </ScrollView>
     </android.support.constraint.ConstraintLayout>
