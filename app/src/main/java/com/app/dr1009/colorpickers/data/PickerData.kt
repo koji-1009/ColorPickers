@@ -1,4 +1,4 @@
-package com.app.dr1009.colorpickers
+package com.app.dr1009.colorpickers.data
 
 import android.databinding.BaseObservable
 import android.databinding.Bindable

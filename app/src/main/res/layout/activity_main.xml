@@ -7,7 +7,7 @@
 
         <variable
             name="data"
-            type="com.app.dr1009.colorpickers.PickerData" />
+            type="com.app.dr1009.colorpickers.data.PickerData" />
 
         <import type="com.app.dr1009.colorpickers.ViewCustomizer" />
     </data>
@@ -19,7 +19,7 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="0dp"
+            android:layout_width="100dp"
             android:layout_height="100dp"
             android:layout_margin="8dp"
             android:src="@drawable/ic_android_black_24dp"

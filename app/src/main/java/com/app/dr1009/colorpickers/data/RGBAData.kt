@@ -1,7 +1,8 @@
-package com.app.dr1009.colorpickers
+package com.app.dr1009.colorpickers.data
 
 import android.databinding.BaseObservable
 import android.databinding.Bindable
+import com.app.dr1009.colorpickers.BR
 
 class RGBAData(aDefault: Int = 0, rDefault: Int = 0, gDefault: Int = 0, bDefault: Int = 0) : BaseObservable() {
 
