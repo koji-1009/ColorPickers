@@ -4,12 +4,12 @@ apply plugin: 'kotlin-android'
 apply plugin: 'kotlin-kapt'
 
 android {
-    compileSdkVersion 25
-    buildToolsVersion "25.0.3"
+    compileSdkVersion 27
+    buildToolsVersion "27.0.3"
     defaultConfig {
         applicationId "com.app.dr1009.colorpickers"
         minSdkVersion 19
-        targetSdkVersion 25
+        targetSdkVersion 27
         versionCode 1
         versionName "1.0"
         testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
@@ -20,22 +20,19 @@ android {
             proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
         }
     }
-    sourceSets {
-        main.java.srcDirs += 'src/main/kotlin'
-    }
     dataBinding {
         enabled = true
     }
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile 'com.android.support:appcompat-v7:25.4.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.2'
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    implementation 'com.android.support:appcompat-v7:27.1.0'
+    implementation 'com.android.support.constraint:constraint-layout:1.0.2'
 
-    compile "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
-    kapt "com.android.databinding:compiler:2.3.3"
+    implementation "org.jetbrains.kotlin:kotlin-stdlib-jre7:$kotlin_version"
+    kapt "com.android.databinding:compiler:$gradle_version"
 
-    testCompile 'junit:junit:4.12'
-    androidTestCompile 'com.android.support.test.espresso:espresso-core:3.0.0'
+    testImplementation 'junit:junit:4.12'
+    androidTestImplementation 'com.android.support.test.espresso:espresso-core:3.0.1'
 }
