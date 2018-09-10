@@ -3,4 +3,9 @@
     <string name="background_color">Background color</string>
     <string name="image_tint_color">Image tint color</string>
     <string name="image_rotation">Image Rotation</string>
+    <string name="type_r">R</string>
+    <string name="type_g">G</string>
+    <string name="type_b">B</string>
+    <string name="type_a">Alpha</string>
+    <string name="type_rotation">Rotation</string>
 </resources>
